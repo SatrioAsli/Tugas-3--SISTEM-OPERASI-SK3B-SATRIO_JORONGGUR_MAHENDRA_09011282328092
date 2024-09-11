@@ -10,12 +10,14 @@ NIM    : 09011282328092
 ![1 2](https://github.com/user-attachments/assets/1db2b4f4-572b-4798-a465-e7d5e0c30bd2)
 ![1 3](https://github.com/user-attachments/assets/af547747-937e-449b-aeb5-69b8658153e5)
 ![1 4](https://github.com/user-attachments/assets/dd0d9aa7-bf4c-4efb-95d2-41a16880bfc5)
-![1](https://github.com/user-attachments/assets/77251aec-c878-4fad-978f-ff7a816cafa2)
 
 
 
 2. Buatlah sub direktori januari, februari dan maret sekaligus pada direktori latihan5.
 membuat direktori latihan5 dengan mkdir lalu membuat direktori lagi didalam direktori latihan5 dengan nama januari, februari, maret.
+
+pertama-tama kita buat dulu direktori utama yang bernama latihan5 untuk menampung direktori Januari, Februari dan Maret. Untuk membuat direktori kita gunakan command "mkdir Latihan5" setelah itu masuk ke direktori nya dengan menggunakan command "cd \Latihan5", kemudian kita buat direktori januari, februari dan maret nya menggunakan command yang sama yaitu "mkdir Januari && mkdir Februari && mkdir Maret" bisa juga di buat satu persatu kalo cara ini eror
+
 ![2](https://github.com/user-attachments/assets/5cb947df-ab3a-47f7-91a9-74f75d1d8d89)
 
 
@@ -65,7 +67,7 @@ menghapus diretori bisa dengan rm -r lalu lokasi direktorinya
 
 8. Ubahkan kepemilikan sub direktori februari sehingga user dan group hanya dapat melakukan read, dan cobalah untuk membuat direktori baru haha pada sub direktori februari.
 
-lalu saya mengetik chmod 444 untuk membuat semuanya hanya bisa read dan saya mencoba membuat direktori baru hasilnya gagal
+Kita ubah izin akses direktori februari menggunakan command "chmod 444 (lokasi direktori yang ingin diubah)" kemudian coba lah untuk membuat direktori baru di dalam direktori februari atau coba masuk ke dalam direktori februari, jika permission denied maka kita sudah berhasil mengubah izin akses direktori nya
 
 ![8](https://github.com/user-attachments/assets/88c53e70-1e9b-46f5-902d-1f5a3287d93f)
 
@@ -78,6 +80,9 @@ lalu saya mengetik chmod 444 untuk membuat semuanya hanya bisa read dan saya men
 
 
 10. Buatlah link dari file dataku ke file dataku.ini dan file dataku.juga dan dengan perintah
-list perhatikan berapa link yang terjadi ? 
+list perhatikan berapa link yang terjadi ?
+
+
+membuat link dari file Dataku.txt ke .juga dan .ini kita gunakan perintah "ln (lokasi file dataku contoh : /home/satriojr25/Desktop/Latihan5/Januari/Dataku.txt kemudian spasi dan ketikkan lokasi yang sama hanya saja ubah Dataku.txt menjadi Dataku.ini begitupun juga dengan Dataku.juga) langkah selanjutnya adalah mengecek berapa link yang terjadi dengan command : ls -l (jika kalian berada di direktori Januari, jika tidak ikutin yang seperti di gambar)
 ![10 2](https://github.com/user-attachments/assets/04e089f6-cfbd-464e-850f-b09ffc47b47b)
 ![10 1](https://github.com/user-attachments/assets/02f54983-5c43-4146-9ca1-9378fdf98100)
